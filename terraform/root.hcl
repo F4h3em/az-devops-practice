@@ -1,6 +1,6 @@
-locals {
-  tenant_id = "6ba9d606-3474-492c-9a99-c2c94ad5462f"
-}
+# locals {
+#   tenant_id = #Enter your tenant ID here
+# }
 
 generate "versions" {
   path      = "versions.tf"
@@ -29,8 +29,8 @@ remote_state {
 
   config = {
     resource_group_name  = "tf-demo2"
-    storage_account_name = "lddevopsstgaccnt01"
-    container_name       = "tfstate"
+    storage_account_name = "tfstatefilestrg"
+    container_name       = "tfstatestorage-terragrunt"
     key                  = "${path_relative_to_include()}/terraform.tfstate"
   }
 }
@@ -44,7 +44,7 @@ provider "azurerm" {
   tenant_id       = var.tenant_id
   subscription_id = var.subscription_id
   client_id       = var.client_id
-  #use_cli         = true
+  #use_cli        = true
 }
 EOF
 }

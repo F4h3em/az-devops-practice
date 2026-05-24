@@ -65,7 +65,7 @@ data "azurerm_client_config" "current" {}
 
 # Get your user Object ID (replace with actual ID or use data source)
 locals {
-  user_object_id = "e94af094-451c-4943-ba57-feedf4cd5955" # Replace with your actual Object ID 
+  user_object_id = "4a31a957-fb70-41f9-a4b1-dca41a60ca34" # Replace with your actual Object ID 
   # Run this to get your Object ID: az ad signed-in-user show --query id --output tsv
 }
 
