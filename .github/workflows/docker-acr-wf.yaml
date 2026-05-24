@@ -42,5 +42,5 @@ jobs:
         run: |
 
           #docker build . -t ${{ secrets.REGISTRY_LOGIN_SERVER }}/flask-app:v1
-          docker buildx build --platform linux/amd64 -t ${{ secrets.REGISTRY_LOGIN_SERVER }}/my-repo/flask-app:v1 . 
-          docker push ${{ secrets.REGISTRY_LOGIN_SERVER }}/flask-app:v1
+          docker buildx build --platform linux/amd64 -t ${{ secrets.REGISTRY_LOGIN_SERVER }}/flask-app:v1 . 
+          docker push ${{ secrets.REGISTRY_LOGIN_SERVER }}/my-repo/flask-app:v1
