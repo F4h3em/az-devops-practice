@@ -1,4 +1,4 @@
-subscription_id         = "99852d3c-e87c-4017-9a07-9c99dd605e1b"
+subscription_id         = "d9926180-7473-4761-886a-f5124e9b02cd"
 environment             = "dev"
 location                = "canadacentral"
 rg_name                 = "rg-demo-1"
